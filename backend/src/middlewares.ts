@@ -12,13 +12,10 @@ export const userMiddleware = (req : Request, res : any, next : NextFunction) =>
     const authHeader = req.headers["authorization"];
 
     if (!authHeader) {
-            return res.status(401).json({ message: "Authorization header is missing" });
-        }
-
+        return res.status(401).json({ message: "Authorization header is missing" });
+    }
 
     const verifyToken = jwt.verify(authHeader, JWT_SECRET);
-
-    console.log(verifyToken);
 
     if (!verifyToken) {
         return res.status(401).json({ message: "Unauthorized" });

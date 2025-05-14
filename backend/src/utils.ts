@@ -1,4 +1,4 @@
-export function random (len: number) : string {
+export function randomHash (len: number) : string {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let result = '';
     for (let i = 0; i < len; i++) {
