@@ -7,3 +7,4 @@ export const iconSizeVariants = {
     "md": "w-4 h-4",
     "lg": "w-5 h-5",
 }
+

@@ -1,7 +1,7 @@
 import { iconSizeVariants } from ".";
 import type { IconProps } from ".";
 
-export const ShareIcon = (props: IconProps) => {
+export const ShareIcon = ({size = "md"}: IconProps) => {
     return (
         <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +9,7 @@ export const ShareIcon = (props: IconProps) => {
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className={iconSizeVariants[props.size]}
+        className={iconSizeVariants[size]}
         >
         <path
             strokeLinecap="round"
